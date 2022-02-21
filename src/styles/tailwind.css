@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.resource-card:nth-child(odd) {
+    @apply bg-purple-500;
+    @apply dark:bg-purple-800;
+    @apply dark:text-gray-300
+}

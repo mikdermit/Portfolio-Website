@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectContributors from "./ProjectContributors";
 
-export default function ProjectCard() {
+export default function ProjectCards() {
   // placeholder, change this to api in future
   const projects = [
     {
@@ -121,16 +121,16 @@ export default function ProjectCard() {
   return projects.map((project) => (
     <div className="flex">
       <div
-        className="flex flex-col md:flex-row
+        className="flex flex-col lg:flex-row
             rounded-lg
             w-full 
-            mt-5 mx-5
+            mx-5
             bg-white dark:bg-gray-800
             text-gray-800 dark:text-gray-400
             shadow-lg"
       >
         <img
-          className="rounded-t-lg md:rounded-none md:rounded-l-lg w-full md:w-48 h-96 md:h-auto"
+          className="rounded-t-lg lg:rounded-none lg:rounded-l-lg w-full lg:w-48 h-96 md:h-auto"
           src={project.url}
         />
         <div className="flex flex-col p-6 w-full">
@@ -141,7 +141,7 @@ export default function ProjectCard() {
           
           <p className="my-5 text-md">{project.description}</p>
           <h3 className="text-md font-medium">Contributors</h3>
-          <div className="flex flex-wrap justify-center">
+          <div className="flex flex-col xl:flex-row xl:flex-wrap pl-20 lg:p-0">
             <ProjectContributors contributors={project.contributors} />
           </div>
         </div>
