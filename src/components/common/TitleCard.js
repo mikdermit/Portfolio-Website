@@ -4,7 +4,7 @@ export default function TitleCard({ title }) {
     return (
         <div className="grid grid-cols-1 text-center
         rounded-lg
-        w-1/2
+        w-full
         mt-3 mb-5
         p-3
         divide-y-2 divide-gray-800 dark:divide-gray-300 
