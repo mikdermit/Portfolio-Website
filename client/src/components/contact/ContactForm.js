@@ -34,11 +34,11 @@ export default function ContactForm() {
   
 
   return (
-    <div className="flex flex-col items-center justify-content mt-10 p-8 w-full mx-auto bg-white dark:bg-gray-800 shadow-lg overflow-hidden">
-      <h1 className="mb-8 text-gray-800 dark:text-white">
+    <div className="flex flex-col items-center rounded-lg p-8 w-full mx-auto bg-white dark:bg-gray-800 shadow-lg overflow-hidden mt-10">
+      <h1 className="mb-8 text-2xl text-gray-800 dark:text-white">
         Send me a message
       </h1>
-      <form onSubmit={handleSubmit} className="w-5/6">
+      <form onSubmit={handleSubmit} className="w-5/6 text-lg">
         <ContactFormItem id="name" type="text" placeholder="John Smith" className=""/>
         <ContactFormItem id="email" type="email" placeholder="johnsmith@example.com" className="mt-3 "/>
         <ContactFormItem id="phone" type="phone" placeholder="(000) 000-0000" className="mt-3 "/>

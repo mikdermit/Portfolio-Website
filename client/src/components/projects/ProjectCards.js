@@ -119,12 +119,12 @@ export default function ProjectCards() {
   ];
 
   return projects.map((project) => (
-    <div className="flex">
       <div
         className="flex flex-col md:flex-row
             rounded-lg
-            w-full 
+            w-3/4 
             mx-5
+            my-3
             h-auto
             bg-white dark:bg-gray-800
             text-gray-800 dark:text-gray-400
@@ -146,7 +146,7 @@ export default function ProjectCards() {
               {project.description}
             </p>
             <div>
-              <h3 className="text-md text-center md:text-left pt-2 font-medium">
+              <h3 className="text-lg text-center md:text-left pt-2 font-medium">
                 Contributors
               </h3>
               <div className="grid grid-cols-2 justify-center">
@@ -156,6 +156,5 @@ export default function ProjectCards() {
           </div>
         </div>
       </div>
-    </div>
   ));
 }

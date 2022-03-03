@@ -2,9 +2,9 @@ import React from "react"
 
 export default function TitleCard({ title }) {
     return (
-        <div className="grid grid-cols-1 text-center
+        <div className="flex flex-col text-center
         rounded-lg
-        w-full
+        w-3/4
         mt-3 mb-5
         p-3
         divide-y-2 divide-gray-800 dark:divide-gray-300 

@@ -8,9 +8,9 @@ import Contact from "./components/contact"
 
 function App() {
   return (
-    <div className="app">
+    <div className="app font-chennai tracking-widest">
       <NavBar />
-      <div className="app-routes">
+      <div className="app-routes bg-gray-200 dark:bg-gray-900 min-h-screen p-5">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="projects" element={<Projects />} />

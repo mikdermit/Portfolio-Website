@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://use.typekit.net/fnh6awp.css');
+
 .resource-card:nth-child(odd) {
     @apply bg-purple-500;
-    @apply dark:bg-purple-800;
+    @apply dark:bg-purple-900;
     @apply dark:text-gray-300
 }
